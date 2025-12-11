@@ -1,0 +1,9 @@
+# Filsystem cmds
+alias fsnooverlay='sudo raspi-config nonint disable_overlayfs && echo Please reboot now'
+alias fsro='sudo mount -o remount,ro / ; sudo mount -o remount,ro /boot/firmware'
+alias fsrw='sudo mount -o remount,rw / ; sudo mount -o remount,rw /boot/firmware'
+
+# Automatically play videos unless the 'noplay' file exists
+if ! [ -f /boot/firmware/noplay ]; then
+    python mpvapp.py
+fi

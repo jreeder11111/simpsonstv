@@ -48,6 +48,8 @@ dtoverlay=dwc2,dr_mode=host
 [all]
 enable_uart=1
 
+# Needed to enable sound through pins
 dtoverlay=audremap,enable_jack,pins_18_19
 
-#gpio=18=op,dh
+# Touch screen overlay
+dtoverlay=waveshare-ads7846,rotate=90,penirq=25,xmin=150,xmax=3900,ymin=100,ymax=3950,speed=50000

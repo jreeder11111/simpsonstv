@@ -1,1 +1,0 @@
-video=HDMI-A-1:480x800m,margin_top=27,margin_bottom=-27,panel_orientation=left_side_up console=serial0,115200 console=tty1 root=PARTUUID=e346e44a-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=US

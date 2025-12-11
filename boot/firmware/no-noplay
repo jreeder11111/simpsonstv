@@ -1,0 +1,1 @@
+Create an empty file called 'noplay' to prevent /home/pi/.bashrc from running mpv
